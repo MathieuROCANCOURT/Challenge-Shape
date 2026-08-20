@@ -3,10 +3,11 @@
  */
 package entities;
 
+import java.awt.Graphics;
+
 /**
  * 
  */
-
 public class Circle extends Shape {
 	private double radius;
 
@@ -15,8 +16,8 @@ public class Circle extends Shape {
 		setRadius(radius);
 	}
 
-	public Circle(double radius, Point center) {
-		super(center);
+	public Circle(double radius, Point point) {
+		super(point);
 		setRadius(radius);
 	}
 
@@ -34,5 +35,11 @@ public class Circle extends Shape {
 	@Override
 	public double area() {
 		return Math.PI * this.radius * this.radius;
+	}
+
+	@Override
+	public void draw(Graphics g) {
+		g.fillOval((int) (super.getX() - this.radius), (int) (super.getY() - this.radius), (int) (2 * radius),
+				(int) (2 * radius));
 	}
 }
