@@ -3,12 +3,20 @@
  */
 package job;
 
+import java.util.Map;
+import java.util.HashMap;
+
 import entities.Shape;
 
 /**
  * 
  */
 public class IJobImpl implements IJob {
+	private Map<Integer, Shape> shapes;
+	
+	public IJobImpl() {
+		this.shapes = new HashMap<>();
+	}
 
 	@Override
 	public void addShape(int id, Shape shape) {
@@ -43,7 +51,7 @@ public class IJobImpl implements IJob {
 	@Override
 	public void displayAll() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
