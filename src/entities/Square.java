@@ -6,37 +6,32 @@ package entities;
 /**
  * 
  */
-public class Square {
-	private int x;
-	private int y;
+public class Square extends Shape {
 	private int side;
 
 	public Square(int side, int x, int y) {
+		super(x, y);
 		setSide(side);
-		setX(x);
-		setY(y);
 	}
 
 	public Square(int side) {
-		setSide(side);
-		setX(0);
-		setY(0);
+		this(side, 0, 0);
 	}
 
 	public int getX() {
-		return x;
+		return this.getCenter().getX();
 	}
 
 	public void setX(int x) {
-		this.x = x;
+		this.getCenter().setX(x);
 	}
 
 	public int getY() {
-		return y;
+		return this.getCenter().getY();
 	}
 
 	public void setY(int y) {
-		this.y = y;
+		this.getCenter().setX(y);
 	}
 
 	public int getSide() {
