@@ -1,0 +1,155 @@
+# ==========================================
+# Gitignore Template for Java, IntelliJ IDEA, VS Code, and Oracle
+# ==========================================
+
+# Ignorer le répertoire cityexo
+cityexo1
+
+# Ignorer le fichier de log de compilation
+log.txt
+
+# ------------------------------------------
+# Java & Build Tools (Maven / Gradle)
+# ------------------------------------------
+# Fichiers compilés
+*.class
+
+# Fichiers de logs
+*.log
+
+# BlueJ
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Archives & Packages
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Logs JVM
+hs_err_pid*
+replay_pid*
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+# ------------------------------------------
+# IntelliJ IDEA
+# ------------------------------------------
+# Fichiers spécifiques à l'utilisateur
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/shelf
+
+# Fichiers générés et bases de données locales IDEA
+.idea/modules.xml
+.idea/uiDesigner.xml
+.idea/gradle.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/artifacts/
+.idea/dataSources/
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/vcs.xml
+.idea/misc.xml
+
+# Fichiers de projet IntelliJ
+*.iws
+*.iml
+*.ipr
+out/
+
+# ------------------------------------------
+# Visual Studio Code
+# ------------------------------------------
+# Dossier de configuration VS Code (exclut les paramètres persos, garde la config partagée si besoin)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+*.code-workspace
+
+# Historique local VS Code
+.history/
+
+# ------------------------------------------
+# Oracle (SQL Developer, Wallets, Network & WebLogic)
+# ------------------------------------------
+# Oracle Wallets, Certificats & Identifiants (SÉCURITÉ)
+*wallet*
+*.jks
+*.p12
+*.pfx
+cwallet.sso
+ewallet.p12
+
+# Fichiers de configuration réseau Oracle (contiennent des IPs/ports/SIDs)
+sqlnet.ora
+tnsnames.ora
+
+# SQL Developer (préférences locales)
+.sqldeveloper/
+sqldev.properties
+
+# Oracle WebLogic Server / Fusion Middleware
+*.lok
+*.stage
+servers/
+domain_bak/
+
+# Fichiers de trace et logs Oracle DB
+*.trc
+*.trm
+alert_*.log
+
+# ------------------------------------------
+# Fichiers Système (OS)
+# ------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Linux
+*~
+.directory
