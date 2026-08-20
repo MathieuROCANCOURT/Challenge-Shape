@@ -3,15 +3,18 @@
  */
 package job;
 
+import javax.swing.JPanel;
+
 import java.util.Map;
+import java.awt.Graphics;
 import java.util.HashMap;
 
-import entities.Shape;
+import entities.*;
 
 /**
  * 
  */
-public class IJobImpl implements IJob {
+public class IJobImpl extends JPanel implements IJob {
 	private Map<Integer, Shape> shapes;
 
 	public IJobImpl() {
@@ -36,18 +39,27 @@ public class IJobImpl implements IJob {
 	@Override
 	public void moveShape(int id, int x, int y) {
 		Shape shape = shapes.get(id);
-		shape.getCenter().setX(x);
-		shape.getCenter().setY(y);
+		shape.setX(x);
+		shape.setY(y);
 	}
 
 	@Override
 	public void drawShape() {
-		
+
+	}
+
+	@Override
+	public void paintComponent(Graphics g) {
+		super.paintComponents(g);
+
+		for (Shape shape : this.shapes.values()) {
+			shape.draw(g);
+		}
 	}
 
 	@Override
 	public void displayAll() {
-		for(Shape shape: this.shapes.values()) {
+		for (Shape shape : this.shapes.values()) {
 			System.out.println(shape);
 		}
 	}
