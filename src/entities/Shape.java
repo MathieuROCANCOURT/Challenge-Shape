@@ -23,8 +23,14 @@ public abstract class Shape {
 		return 0;
 	}
 	
+	/*--- Accesseurs ---*/
+	
 	public Point getCenter() {
 		return center;
+	}
+	
+	public void setCenter(Point localCenter) {
+		center = localCenter;
 	}
 
 	@Override
