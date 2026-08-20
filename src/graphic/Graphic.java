@@ -1,5 +1,5 @@
 /**
- * Programme permettant l'affichage de plusieurs formes géométriques
+ * Programme permettant l'affichage de plusieurs formes géométriques.
  * 
  * @author El babili - 2023
  * 

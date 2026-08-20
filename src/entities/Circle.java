@@ -1,7 +1,7 @@
 /**
  * 
  */
-package graphic;
+package entities;
 
 /**
  * 
