@@ -1,18 +1,16 @@
 # Challenge Shape
 
-Projet commun de Louis GASC, Alban MARTEl, Mathieu ROCANCOURT
+Projet commun de Louis GASC, Alban MARTEL, Mathieu ROCANCOURT
 
 ## Objectif du projet 
 
-DESSINER DES FORMES GEOMETRIQUES DANS UNE INTERFACE GRAPHIQUE
-
+### DESSINER DES FORMES GEOMETRIQUES DANS UNE INTERFACE GRAPHIQUE
 
 -   Dans un premier temps, vous allez réaliser le TP sur les formes géométriques vu dans le cours (classes Shape, Square, et Circle) puis le tester pour obtenir le même résultat, puis ajouter la couche métier (voir slide sur l’interface)
 
 -   Puis, étudier la classe Graphic.java afin de comprendre comment dessiner des formes géométriques dans une IHM avec Java.
 
--   Enfin, vous devez réaliser une application interagissant avec une couche métier représentée par l’implémentation IJobImpl afin de gérer plusieurs formes
-   géométriques qu’il faudra afficher chaque fois que votre IHM est redimensionnée(rafraîchit) :
+-   Enfin, vous devez réaliser une application interagissant avec une couche métier représentée par l’implémentation IJobImpl afin de gérer plusieurs formes géométriques qu’il faudra afficher chaque fois que votre IHM est redimensionnée(rafraîchit) :
 
 ```	  
   Circle c1 = new Circle(20 , 30 , 50); //rayon + x + y
