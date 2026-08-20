@@ -3,6 +3,8 @@
  */
 package entities;
 
+import java.awt.Graphics;
+
 /**
  * 
  */
@@ -18,22 +20,6 @@ public class Square extends Shape {
 		this(side, 0, 0);
 	}
 
-	public int getX() {
-		return this.getCenter().getX();
-	}
-
-	public void setX(int x) {
-		this.getCenter().setX(x);
-	}
-
-	public int getY() {
-		return this.getCenter().getY();
-	}
-
-	public void setY(int y) {
-		this.getCenter().setX(y);
-	}
-
 	public int getSide() {
 		return side;
 	}
@@ -43,5 +29,10 @@ public class Square extends Shape {
 			this.side = 1;
 		else
 			this.side = side;
+	}
+	
+	@Override
+	public void draw(Graphics g) {
+		g.drawRect(super.getX(), super.getY(), this.side, this.side);
 	}
 }
