@@ -3,38 +3,44 @@
  */
 package entities;
 
+import java.awt.Graphics;
+
 /**
  * 
  */
 public abstract class Shape {
-	private Point center;
+	private int x;
+	private int y;
 
 	public Shape(int x, int y) {
-		this.center = new Point(x, y);
+		this.x = x;
+		this.y = y;
 	}
-
-	public Shape(Point center) {
-		int x = center.getX();
-		int y = center.getY();
-		this.center = new Point(x, y);
+	
+	public Shape(Point point) {
+		this.x = point.getX();
+		this.y = point.getY();
 	}
 
 	public double area() {
 		return 0;
 	}
-	
-	/*--- Accesseurs ---*/
-	
-	public Point getCenter() {
-		return center;
-	}
-	
-	public void setCenter(Point localCenter) {
-		center = localCenter;
+
+	public int getX() {
+		return x;
 	}
 
-	@Override
-	public String toString() {
-		return "Shape [center = " + center + " ]";
+	public int getY() {
+		return y;
 	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
+	public abstract void draw(Graphics g);
 }
