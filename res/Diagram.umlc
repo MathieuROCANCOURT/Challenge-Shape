@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<umlmark-class version="0.8.1" icons="true" image-type="JPEG" show-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-rel="true" router="FAN">  
+  <class id="1" language="java" name="entities.Point" project="Challenge-Shape" 
+    file="/Challenge-Shape/src/entities/Point.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="539" y="916"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="Main" project="Challenge-Shape" file="/Challenge-Shape/src/Main.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="114" x="434" y="37"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="graphic.Graphic" project="Challenge-Shape" 
+    file="/Challenge-Shape/src/graphic/Graphic.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="132" x="434" y="174"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="entities.Square" project="Challenge-Shape" 
+    file="/Challenge-Shape/src/entities/Square.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="514" y="586"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="entities.Circle" project="Challenge-Shape" 
+    file="/Challenge-Shape/src/entities/Circle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="323" y="917"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="entities.Shape" project="Challenge-Shape" 
+    file="/Challenge-Shape/src/entities/Shape.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="318" y="590"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="job.IJob" project="Challenge-Shape" file="/Challenge-Shape/src/job/IJob.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="117" y="588"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="job.IJobImpl" project="Challenge-Shape" 
+    file="/Challenge-Shape/src/job/IJobImpl.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="260" y="246"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <generalization id="10">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <dependency id="11">    
+    <bendpoint x="592" y="311"/>    
+    <bendpoint x="592" y="556"/>    
+    <bendpoint x="592" y="765"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <generalization id="13">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <association id="15">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="16" name="shapes"/>      
+      <multiplicity id="17" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="18">    
+    <bendpoint x="422" y="311"/>    
+    <bendpoint x="422" y="556"/>    
+    <bendpoint x="422" y="765"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <realization id="19">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <dependency id="20">    
+    <bendpoint x="432" y="812"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <generalization id="21">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <dependency id="22">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="23">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <classifier-attribute resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" 
+    sort="true" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-attribute>  
+  <association-attribute labels="true" multiplicity="true"/>
+</umlmark-class>
