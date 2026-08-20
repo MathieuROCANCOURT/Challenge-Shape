@@ -13,45 +13,43 @@ import entities.Shape;
  */
 public class IJobImpl implements IJob {
 	private Map<Integer, Shape> shapes;
-	
+
 	public IJobImpl() {
 		this.shapes = new HashMap<>();
 	}
 
 	@Override
 	public void addShape(int id, Shape shape) {
-		// TODO Auto-generated method stub
-		
+		this.shapes.put(id, shape);
 	}
 
 	@Override
 	public void deleteShape(int id) {
-		// TODO Auto-generated method stub
-		
+		this.shapes.remove(id);
 	}
 
 	@Override
 	public Shape getShapeById(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.shapes.get(id);
 	}
 
 	@Override
 	public void moveShape(int id, int x, int y) {
-		// TODO Auto-generated method stub
-		
+		Shape shape = shapes.get(id);
+		shape.getCenter().setX(x);
+		shape.getCenter().setY(y);
 	}
 
 	@Override
 	public void drawShape() {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void displayAll() {
-		// TODO Auto-generated method stub
-
+		for(Shape shape: this.shapes.values()) {
+			System.out.println(shape);
+		}
 	}
 
 }
