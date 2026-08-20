@@ -31,6 +31,10 @@ _NB : une forme géométrique est bien placée pour savoir comment elle doit se 
 
 Consignes : c’est un travail de groupe aussi tous les membres du groupe doivent coder (dans la mesure du possible), et vous devrez expliquer le rôle de chacun(e) dans la répartition des tâches (dans la mesure du degré d’implication/motivation). L'idée reste de permettre à tout le groupe d'apprendre!
 
+## Diagramme de classe
+
+<img src="./res/Diagram.jpg" alt="Diagram UML." />
+
 ## Cloner le projet
 
 ```
