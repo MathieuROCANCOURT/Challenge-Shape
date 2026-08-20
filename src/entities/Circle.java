@@ -6,7 +6,6 @@ package entities;
 /**
  * 
  */
-import java.awt.Point;
 
 public class Circle extends Shape {
 	private double radius;

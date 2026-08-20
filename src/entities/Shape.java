@@ -3,8 +3,6 @@
  */
 package entities;
 
-import java.awt.Point;
-
 /**
  * 
  */
@@ -16,8 +14,8 @@ public abstract class Shape {
 	}
 
 	public Shape(Point center) {
-		int x = center.x;
-		int y = center.y;
+		int x = center.getX();
+		int y = center.getY();
 		this.center = new Point(x, y);
 	}
 
