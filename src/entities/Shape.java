@@ -22,6 +22,10 @@ public abstract class Shape {
 	public double area() {
 		return 0;
 	}
+	
+	public Point getCenter() {
+		return center;
+	}
 
 	@Override
 	public String toString() {
